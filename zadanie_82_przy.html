@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> Zadanie 82</title>
+ <script language="JavaScript">
+ function pushbutton() {
+ alert("Czesc !");}
+ </script>
+</head>
+<body>
+<p style="color: red; font-size: 2cm;">Przybyła</p>
+<font color="green" size="5cm">
+dzis = new Date()--> W powyższym kodzie dzis = new Date() tworzy nowy obiekt Date, który przechowuje aktualną datę i czas.<br>
+dzis = dzis.getMinutes()--> Zmienna dzis przechowuje teraz wartość aktualnej minuty.<br>
+dzis = dzis.getMonth()--> Zmienna dzis przechowuje teraz wartość aktualnego miesiąca (liczba od 0 do 11, gdzie 0 oznacza styczeń, a 11 grudzień).<br>
+dzis = dzis.getDate()--> Zmienna dzis przechowuje teraz wartość aktualnego dnia miesiąca (liczba od 1 do 31).<br>
+dzis = dzis.getHours()--> Zmienna dzis przechowuje teraz wartość aktualnej godziny (liczba od 0 do 23).<br>
+dzis = dzis.getFullYear()--> Zmienna dzis przechowuje teraz wartość aktualnego roku.<br>
+</font>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+ document.write(document.lastModified,"<br>")
+</script>
+<form>
+ <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+ dzis = new Date()
+ document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+ document.write("<br>Aktualna data : <font color='red' size='1cm'>",dzis.getDate(),"</font>,<font color='green' size='1cm'>",dzis.getMonth()+1,"</font>,<font color='blue' size='1cm'>",dzis.getFullYear(),"</font>");
+</script>
+</body>
+</html>
